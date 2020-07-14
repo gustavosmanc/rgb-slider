@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RGB Slider</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="app-container">
+      <div class="rgb-container">
+        <div class="range-container">
+          <label for="r">R</label>
+          <input type="range" class="input-range" id="r" name="r" value="0" min="0" max="255" />
+          <input type="text" class="input-text" id="r_text" value="0" disabled />
+        </div>
+        <div class="range-container m-top">
+          <label for="g">G</label>
+          <input type="range" class="input-range" id="g" name="g" value="0" min="0" max="255" />
+          <input type="text" class="input-text" id="g_text" value="0" disabled />
+        </div>
+        <div class="range-container m-top">
+          <label for="b">B</label>
+          <input type="range" class="input-range" id="b" name="b" value="0" min="0" max="255" />
+          <input type="text" class="input-text" id="b_text" value="0" disabled />
+        </div>
+      </div>
+      <div class="color-box-container">
+        <div id="color_box"></div>
+        <input type="text" class="input-hex" name="input-hex" id="hex_text" value="#000000" disabled />
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
